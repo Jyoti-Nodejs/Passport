@@ -129,6 +129,3 @@ app.listen(5000, () => {
   console.log("Server is running on Port: 5000");
 });
 
-// cron.schedule("0 */01 * * * *", () => {
-//   console.log("runs in every second");
-// });
