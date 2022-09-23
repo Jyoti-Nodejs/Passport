@@ -17,18 +17,18 @@ module.exports = {
     };
     console.log("mailOptions", mailOptions);
     // cron.schedule("0 */01 * * * *", () => {
-    const task = cron.schedule(
-      "* */05 * * * *",
-      () => {
-        transporter.sendMail(mailOptions, function (err, info) {
-          if (err) console.log(err);
-          else console.log(info);
-        });
-      },
-      {
-        scheduled: true,
-      }
-    );
-    task.start();
+    // const task = cron.schedule(
+    //   "* */05 * * * *",
+    //   () => {
+    transporter.sendMail(mailOptions, function (err, info) {
+      if (err) console.log(err);
+      else console.log(info);
+    });
   },
+  //     {
+  //       scheduled: true,
+  //     }
+  //   );
+  //   task.start();
+  // },
 };
